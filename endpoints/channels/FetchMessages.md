@@ -1,5 +1,6 @@
 # Fetch Messages
 Fetch all messages in a DM/Server Channel.
+
 #### Endpoint
 ```
 GET https://nerimity.com/api/channels/${CHANNEL_ID}/messages
