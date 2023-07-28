@@ -8,7 +8,7 @@
 | tag           | String(4)                                    | Alphanumeric user tag.                        |
 | hexColor      | String                                       | Randomly generate color for default profile.  |
 | avatar        | String?                                      | Partial URL for the avatar                    |
-| badge         | [UserBadgeEnum](#userbadge)                  | User badges in bit.                              |
+| badge         | [UserBadge](#userbadge)                  | User badges in bit.                              |
 
 # UserBadge
 TODO
