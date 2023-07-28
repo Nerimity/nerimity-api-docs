@@ -2,7 +2,7 @@
 Nerimity API Docs
 
 ## Endpoints
-- [channels](/endpoints/channels/);
+- [channels](/endpoints/channels/)
   - [CreateMessage](/endpoints//channels/CreateMessage.md)
 
 ## Types
