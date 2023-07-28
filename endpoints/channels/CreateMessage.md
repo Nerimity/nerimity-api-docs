@@ -15,4 +15,4 @@ POST https://nerimity.com/api/channels/{CHANNEL_ID}/messages
 | content       | String            | Your Message content                                                    |
 | socketId      | String?           | Enter your socket id to exclude the message created event for yourself. |
 
-Response: See the [Message](/types/Message.md) type.
+#### Response: [Message](/types/Message.md)
