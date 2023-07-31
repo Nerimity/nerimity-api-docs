@@ -6,7 +6,10 @@ Nerimity API Docs
   - [FetchMessages](/endpoints/channels/FetchMessages.md)
   - [CreateMessage](/endpoints/channels/CreateMessage.md)
   - [DeleteMessage](/endpoints/channels/DeleteMessage.md.md)
-
+- [servers](/endpoints/servers/)
+  - [KickMember](/endpoints/servers/KickMember.md)
+  - [BanMember](/endpoints/servers/BanMember.md)
+  - [UnbanMember](/endpoints/servers/UnbanMember.md)
 ## Types
 - [Message](/types/Message.md)
 - [User](/types/User.md)
