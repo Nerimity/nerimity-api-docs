@@ -13,5 +13,5 @@ DELETE https://nerimity.com/api/channels/${CHANNEL_ID}/messages/${MESSAGE_ID}
 
 #### Response: 
 ```json
-{ message: "Message deleted!" }
+{ "message": "Message deleted!" }
 ```

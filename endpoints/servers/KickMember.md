@@ -13,5 +13,5 @@ DELETE https://nerimity.com/api/servers/${SERVER_ID}/members/${USER_ID}/kick
 
 #### Response: 
 ```json
-{ status: true }
+{ "status": true }
 ```

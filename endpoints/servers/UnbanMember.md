@@ -13,5 +13,5 @@ DELETE https://nerimity.com/api/servers/${SERVER_ID}/bans/${USER_ID}
 
 #### Response: 
 ```json
-{ status: true }
+{ "status": true }
 ```
