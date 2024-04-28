@@ -11,4 +11,9 @@
 | badge         | [UserBadge](#userbadge)                  | User badges in bit.                              |
 
 # UserBadge
-TODO
+| Bit           | Name                                         | Description                                   |
+| ------------- | -------------------------------------------- | --------------------------------------------- |
+| 1             | Founder                                      | Creator of Nerimity                           |
+| 2             | Admin                                        | Admin of Nerimity                             |
+| 4             | Contributor                                  | Helped with this project in some way          |
+| 8             | Supporter                                    | Supported this project by donating money      |
