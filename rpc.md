@@ -38,6 +38,7 @@ You can now emit events to the websocket server.
 }
 ```
 
+[RPC Data Types](/types/RPC.md)  
 To clear the RPC, send the above event but with data set to null.
 
 # Post Message Through Browser
@@ -74,4 +75,5 @@ document.getElementById('cross_domain_page').contentWindow.postMessage({
 })
 ```
 
+[RPC Data Types](/types/RPC.md)  
 To clear the RPC, send the above event but with data set to null.
