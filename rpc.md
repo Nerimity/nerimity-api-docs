@@ -20,13 +20,14 @@ To find the localhost port for the WebSocket Server, you will need to:
 3. if it is not received, try the next port.
 4. if it is received, You are now connected to the WebSocket Server.
 
-You can now emit events to Nerimity.
+You can now emit events to the websocket server.
 
 ```js
 {
   type: 'UPDATE_RPC',
   data: {
     name: string;
+    link?: string;
     action?: string;
     title?: string;
     subtitle?: string;
@@ -62,6 +63,7 @@ document.getElementById('cross_domain_page').contentWindow.postMessage({
   type: 'UPDATE_RPC',
   data: {
     name: string;
+    link?: string;
     action?: string;
     title?: string;
     subtitle?: string;
