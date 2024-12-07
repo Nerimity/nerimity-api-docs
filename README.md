@@ -1,7 +1,9 @@
 # Nerimity API Docs (WIP)
+
 Nerimity API Docs
 
 ## Endpoints
+
 - [channels](/endpoints/channels/)
   - [FetchMessages](/endpoints/channels/FetchMessages.md)
   - [CreateMessage](/endpoints/channels/CreateMessage.md)
@@ -10,6 +12,12 @@ Nerimity API Docs
   - [KickMember](/endpoints/servers/KickMember.md)
   - [BanMember](/endpoints/servers/BanMember.md)
   - [UnbanMember](/endpoints/servers/UnbanMember.md)
+
 ## Types
+
 - [Message](/types/Message.md)
 - [User](/types/User.md)
+
+## Other
+
+- [RPC](/rpc.md)
