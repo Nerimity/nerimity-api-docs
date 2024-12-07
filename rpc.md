@@ -22,7 +22,7 @@ To find the localhost port for the WebSocket Server, you will need to:
 
 You can now emit events to the websocket server.
 
-```js
+```ts
 {
   type: 'UPDATE_RPC',
   data: {
