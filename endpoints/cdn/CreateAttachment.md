@@ -12,7 +12,12 @@ POST https://cdn.nerimity.com/upload
 | Content-Type          | string    | Content type of the file                  |
 | File Content          | binary    | The binary content of the image file      |
 
-### Content-Disposition
+## Content-Disposition
+Construct of `name` and `filename`.
+#### Example
+```
+Content-Disposition: form-data; name="f"; filename="somename.jpg"
+```
 
 
 #### Response: [FileId](/types/FileId.md)
