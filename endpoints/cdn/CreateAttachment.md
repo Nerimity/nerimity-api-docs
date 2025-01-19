@@ -20,4 +20,7 @@ Content-Disposition: form-data; name="f"; filename="somename.jpg"
 ```
 
 
-#### Response: [FileId](/types/FileId.md)
+#### Response
+```json
+{"fileId": "1234.."}
+```

@@ -18,8 +18,6 @@ Nerimity API Docs
 
 - [Message](/types/Message.md)
 - [User](/types/User.md)
-- [FileId](/types/FileID.md)
-
 ## Other
 
 - [RPC](/rpc.md)

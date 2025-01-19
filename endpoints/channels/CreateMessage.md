@@ -14,7 +14,7 @@ POST https://nerimity.com/api/channels/{CHANNEL_ID}/messages
 | ------------- | ----------------- | ----------------------------------------------------------------------- |
 | content       | String            | Your Message content                                                    |
 | socketId      | String?           | Enter your socket id to exclude the message created event for yourself. |
-| attachments   | Array?            | FileIds of Nerimity CDN to be included in the message.                  |
+| attachments   | String[]          | FileIds of Nerimity CDN to be included in the message.                  |
 
 
 
