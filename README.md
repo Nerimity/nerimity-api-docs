@@ -13,11 +13,13 @@ Nerimity API Docs
   - [BanMember](/endpoints/servers/BanMember.md)
   - [UnbanMember](/endpoints/servers/UnbanMember.md)
 
+
 ## Types
 
 - [Message](/types/Message.md)
 - [User](/types/User.md)
-
 ## Other
 
 - [RPC](/rpc.md)
+- [CDN](/endpoints/cdn/)
+  - [CreateAttachment](/endpoints/cdn/CreateAttachment.md)
