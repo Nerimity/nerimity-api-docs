@@ -5,18 +5,18 @@ Nerimity API Docs
 ## Endpoints
 
 - [Channels](/endpoints/channels/)
-  - [Fetch messages](/endpoints/channels/FetchMessages.md)
-  - [Create a message](/endpoints/channels/CreateMessage.md)
-  - [Delete a message](/endpoints/channels/DeleteMessage.md)
+  - [Fetch messages [GET]](/endpoints/channels/FetchMessages.md)
+  - [Create a message [POST]](/endpoints/channels/CreateMessage.md)
+  - [Delete a message [DELETE]](/endpoints/channels/DeleteMessage.md)
 - [Servers](/endpoints/servers/)
-  - [Kick a server member](/endpoints/servers/KickMember.md)
-  - [Ban a server member](/endpoints/servers/BanMember.md)
-  - [Un-ban a server member](/endpoints/servers/UnbanMember.md)
+  - [Kick a server member [DELETE]](/endpoints/servers/KickMember.md)
+  - [Ban a server member [POST]](/endpoints/servers/BanMember.md)
+  - [Un-ban a server member[DELETE]](/endpoints/servers/UnbanMember.md)
 - [Commands](/endpoints/applications/)
-  - [Register bot commands](/endpoints/applications/RegisterBotCommand.md)
+  - [Register bot commands [POST]](/endpoints/applications/RegisterBotCommand.md)
 - [Roles](/endpoints/roles/)
-  - [Update a role](/endpoints/roles/UpdateRole.md)
-  - [Delete a role](/endpoints/roles/DeleteRole.md)
+  - [Update a role [POST]](/endpoints/roles/UpdateRole.md)
+  - [Delete a role [DELETE]](/endpoints/roles/DeleteRole.md)
 
 ## Types
 
@@ -30,4 +30,4 @@ Nerimity API Docs
 
 - [RPC](/rpc.md)
 - [CDN](/endpoints/cdn/)
-  - [Create an attachment](/endpoints/cdn/CreateAttachment.md)
+  - [Create an attachment [POST]](/endpoints/cdn/CreateAttachment.md)
