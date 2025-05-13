@@ -20,7 +20,7 @@ Nerimity API Docs
 
 ## Types
 
-- Message
+- [Message](/types/Message.md)
 - [User](/types/User.md)
 - [Server](/types/Server.md)
 - [Role](/types/Role.md)
