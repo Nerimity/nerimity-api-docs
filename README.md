@@ -7,7 +7,7 @@ Nerimity API Docs
 - [channels](/endpoints/channels/)
   - [FetchMessages](/endpoints/channels/FetchMessages.md)
   - [CreateMessage](/endpoints/channels/CreateMessage.md)
-  - [DeleteMessage](/endpoints/channels/DeleteMessage.md.md)
+  - [DeleteMessage](/endpoints/channels/DeleteMessage.md)
 - [servers](/endpoints/servers/)
   - [KickMember](/endpoints/servers/KickMember.md)
   - [BanMember](/endpoints/servers/BanMember.md)
@@ -18,7 +18,6 @@ Nerimity API Docs
 - [roles](/endpoints/roles/)
   - [UpdateRole](/endpoints/roles/UpdateRole.md)
   - [DeleteRole](/endpoints/roles/DeleteRole.md)
-
 
 ## Types
 
