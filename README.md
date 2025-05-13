@@ -11,7 +11,7 @@ Nerimity API Docs
 - [Servers](/endpoints/servers/)
   - [Kick a server member [DELETE]](/endpoints/servers/KickMember.md)
   - [Ban a server member [POST]](/endpoints/servers/BanMember.md)
-  - [Un-ban a server member[DELETE]](/endpoints/servers/UnbanMember.md)
+  - [Un-ban a server member [DELETE]](/endpoints/servers/UnbanMember.md)
 - [Commands](/endpoints/applications/)
   - [Register bot commands [POST]](/endpoints/applications/RegisterBotCommand.md)
 - [Roles](/endpoints/roles/)
