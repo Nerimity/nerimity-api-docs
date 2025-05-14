@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			sessionStorage.redirect = location.href;
+			const projectPages = false; // If you're using the base .github.io domain without a path (i.e. <name>.github.io is your home page), set this to false
+			const l = window.location;
+			const repo = projectPages ? '/' + l.pathname.split('/')[1] : '';
+			l.replace(
+				l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo
+			);
+		</script>
+	</head>
+</html>
