@@ -4,7 +4,7 @@ import style from "./Drawer.module.css";
 import { A, useLocation } from "@solidjs/router";
 
 const fetchDocs = () => {
-  return fetch("/nerimity-docs/docs/README.md").then((r) => r.text());
+  return fetch("/docs/README.md").then((r) => r.text());
 };
 
 const requestMethods = ["GET", "POST", "DELETE", "PATCH", "PUT"];
@@ -28,7 +28,7 @@ export const Drawer = () => {
               );
               return (
                 <A
-                  href={"/nerimity-docs" + a.href!.slice(0, -3)}
+                  href={a.href!.slice(0, -3)}
                   data-selected={location.pathname + ".md" === a.href!}
                 >
                   <span>
