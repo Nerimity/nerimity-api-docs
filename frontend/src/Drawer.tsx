@@ -28,7 +28,7 @@ export const Drawer = () => {
               );
               return (
                 <A
-                  href={a.href!.slice(0, -3)}
+                  href={"/nerimity-docs" + a.href!.slice(0, -3)}
                   data-selected={location.pathname + ".md" === a.href!}
                 >
                   <span>
