@@ -23,6 +23,7 @@
 - [Server](/types/Server.md)
 - [Role](/types/Role.md)
 - [Post](/types/Post.md)
+- [RPC](/types/RPC.md)
 
 ## Other
 
