@@ -15,6 +15,8 @@
 - Roles
   - [Update a role [POST]](/endpoints/roles/UpdateRole.md)
   - [Delete a role [DELETE]](/endpoints/roles/DeleteRole.md)
+- CDN
+  - [Create an attachment [POST]](/endpoints/cdn/CreateAttachment.md)
 
 ## Types
 
@@ -28,5 +30,3 @@
 ## Other
 
 - [RPC](/rpc.md)
-- CDN
-  - [Create an attachment [POST]](/endpoints/cdn/CreateAttachment.md)
