@@ -2,13 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/nerimity-docs/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Solid + TS</title>
-    <script type="module" crossorigin src="/assets/index-CLdv7Eid.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Co2u17jU.css">
+    <script type="module" crossorigin src="/nerimity-docs/assets/index-CLdv7Eid.js"></script>
+    <link rel="stylesheet" crossorigin href="/nerimity-docs/assets/index-Co2u17jU.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+			// Redirects user from 404
+			(function () {
+				var redirect = sessionStorage.redirect;
+				delete sessionStorage.redirect;
+				if (redirect && redirect != location.href) {
+					history.replaceState(null, null, redirect);
+				}
+			})();
+		</script>
   </body>
 </html>
