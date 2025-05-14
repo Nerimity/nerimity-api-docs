@@ -1,0 +1,15 @@
+:root {
+  color: white;
+  background-color: #000000;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
