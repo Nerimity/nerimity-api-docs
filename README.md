@@ -9,7 +9,7 @@
 - Servers
   - [Kick a server member [DELETE]](/endpoints/servers/KickMember.md)
   - [Ban a server member [POST]](/endpoints/servers/BanMember.md)
-  - [Un-ban a server member [DELETE]](/endpoints/servers/UnbanMember.md)
+  - [Unban a server member [DELETE]](/endpoints/servers/UnbanMember.md)
 - Commands
   - [Register bot commands [POST]](/endpoints/applications/RegisterBotCommand.md)
 - Roles
