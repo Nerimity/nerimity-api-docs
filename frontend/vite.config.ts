@@ -21,7 +21,7 @@ const renameMe: () => PluginOption = () => ({
 
 export default defineConfig({
   plugins: [solid(), renameMe()],
-  base: "/nerimity-docs/",
+  base: "/",
   optimizeDeps: {
     include: ["solid-markdown > micromark", "solid-markdown > unified"],
   },
