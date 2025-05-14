@@ -1,6 +1,4 @@
-# Nerimity API Docs (WIP)
-
-Nerimity API Docs
+# Nerimity Documentation
 
 ## Endpoints
 
