@@ -1,3 +1,4 @@
+import style from "./ContentPane.module.css";
 import { useLocation } from "@solidjs/router";
 import { createEffect, createResource, createSignal, Show } from "solid-js";
 import markdownit from "markdown-it";
@@ -24,7 +25,7 @@ export const ContentPane = () => {
     setMarkdown(str);
   });
   return (
-    <div class="content-pane">
+    <div class={style.container}>
       <Show when={md}>
         <div innerHTML={markdown()}></div>
       </Show>

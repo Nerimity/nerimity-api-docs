@@ -2,10 +2,13 @@
   flex-shrink: 0;
   width: 400px;
   padding: 6px;
-  margin: 6px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
 
+  * {
+    list-style: none;
+  }
+  
   a {
     color: rgba(255, 255, 255, 0.6);
     font-weight: normal;

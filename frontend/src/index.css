@@ -11,10 +11,10 @@
 
 body, html {
   padding: 0;
-  margin: 0;
+  margin: 8px;
 }
 
 #root {
   display: flex;
-  gap: 8px;
+  gap: 18px;
 }

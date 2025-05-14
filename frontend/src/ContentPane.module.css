@@ -1,0 +1,29 @@
+.container {
+  table {
+    margin-bottom: 12px;
+    border-spacing: 0;
+    thead {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        right: -8px;
+        bottom: 0;
+        left: -8px;
+        border-radius: 99px;
+        background-color: rgba(255, 255, 255, 0.2);
+        content: "";
+      }
+    }
+    th {
+
+    }
+    td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+
+    }
+  }
+}
