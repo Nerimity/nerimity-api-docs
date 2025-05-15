@@ -23,7 +23,7 @@ md.use(MarkdownItAnchor);
 function fetchDocs(path: string) {
   if (path === "/.md") return "## Select a page from the drawer.";
   return fetch("/docs" + path).then((r) => {
-    if (r.status !== 200) return "# This page does not exist.";
+    if (r.status !== 200) return "## This page does not exist.";
     return r.text();
   });
 }
