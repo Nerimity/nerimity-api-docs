@@ -26,6 +26,7 @@
 - [Role](/types/Role.md)
 - [Post](/types/Post.md)
 - [RPC](/types/RPC.md)
+- [BotCommand](/types/BotCommand.md)
 
 ## Other
 
