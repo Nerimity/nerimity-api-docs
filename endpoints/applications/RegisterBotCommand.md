@@ -12,11 +12,11 @@ POST https://nerimity.com/api/applications/bot/commands
 | ------------- | --------------- |
 | Authorization | Your Bot token. |
 
-| Body        | Type     | Description                   |
-| ----------- | -------- | ----------------------------- |
-| name        | String   | The command's name            |
-| description | String   | The command's description     |
-| args        | String[] | The arguments for the command |
+# Body
+
+| Body(JSON) | Type                                 | Description              |
+| ---------- | ------------------------------------ | ------------------------ |
+| commands   | [BotCommand[]](/types/BotCommand.md) | The commands to register |
 
 #### Response
 
