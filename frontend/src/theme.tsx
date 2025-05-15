@@ -39,8 +39,8 @@ export const ThemeProvider = (props: { children: JSXElement }) => {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     applyThemeFromStorage();
-    Object.values(onThemeChangedFns.current).forEach((cb) => {
-      cb(theme);
+    Object.values(onThemeChangedFns).forEach((cb) => {
+      cb(theme());
     });
   };
 

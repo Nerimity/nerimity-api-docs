@@ -1,3 +1,13 @@
+:root {
+  :global .light {
+  .container {
+    code:not(pre code) {
+        --selected-bg: white;
+      }
+    }
+  }
+}
+
 .container {
   position: relative;
   overflow: auto;
@@ -51,7 +61,7 @@
     text-decoration: none;
     &:hover {
       border-radius: 4px;
-      background-color: var(--selected-bg);;
+      background-color: var(--selected-bg);
     }
   }
   pre {
@@ -66,5 +76,12 @@
       color: var(--text-color);
       font-size: 14px;
     }
+  }
+
+  code:not(pre code) {
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--selected-text-color);
+    background-color: var(--selected-bg);
   }
 }
