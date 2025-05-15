@@ -1,7 +1,38 @@
 :root {
-  color: white;
-  background-color: #000000;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  .dark { 
+    --primary-color: rgb(172, 191, 255);
+    --text-color: white;
+    --bg-color: black;
+    --pane-color: rgb(26 26 26);
+
+    --selected-bg: #243138;
+    --selected-text-color: rgb(130, 205, 255);
+
+    --dim-text: rgba(255, 255, 255, 0.8);
+    --extra-dim-text: rgba(255, 255, 255, 0.4);
+
+    --hover-bg: rgba(255, 255, 255, 0.1);
+
+    --border-color: rgba(255, 255, 255, 0.2);
+  }
+  .light {
+    --primary-color: rgb(46, 87, 223);
+    --pane-color: white;
+    --text-color: black;
+    --bg-color: rgb(220, 236, 255);
+
+    --selected-bg: #d5f0ff;
+    --selected-text-color: rgb(0, 95, 150);
+
+    --dim-text: rgba(0, 0, 0, 0.6);
+    --extra-dim-text: rgba(0, 0, 0, 0.6);
+
+
+    --hover-bg: rgba(0, 0, 0, 0.04);
+
+    --border-color: rgba(0, 0, 0, 0.2);
+  }
+
 }
 
 * {
@@ -10,11 +41,19 @@
 
 
 body, html {
+  height: 100px;
   padding: 0;
-  margin: 8px;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #root {
+  position: relative;
   display: flex;
-  gap: 18px;
+  overflow: hidden;
+  flex-direction: column;
+  height: 100vh;
+
 }

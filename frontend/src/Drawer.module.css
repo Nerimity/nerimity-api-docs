@@ -1,16 +1,20 @@
 .drawer {
+  overflow: auto;
   flex-shrink: 0;
-  width: 400px;
-  padding: 6px;
+  width: 340px;
+  padding: 8px;
+  margin: 8px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--pane-color);
+
+
 
   * {
     list-style: none;
   }
   
   a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--extra-dim-text);
     font-weight: normal;
     text-decoration: none;
 
@@ -32,7 +36,7 @@
     display: none;
   }
   li {
-    color: rgba(255,255,255,0.8);
+    color: var(--dim-text);
     font-weight: bold;
   }
   li:has(> a) {
@@ -47,11 +51,12 @@
       border-radius: 6px;
       transition: 0.2s;
       &:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--text-color);
+        background-color: var(--hover-bg);
       }
       &[data-selected="true"] {
-        color: rgb(130, 205, 255);
-        background-color: rgba(101, 199, 255, 0.13);
+        color: var(--selected-text-color);
+        background-color: var(--selected-bg);
       }
       span {
         flex: 1;
@@ -71,3 +76,38 @@
     }
   }
 }
+
+.backdrop {
+  display: none;
+}
+
+
+
+@media (max-width: 410px) {
+  .drawer {
+
+    width: initial;
+  }
+  
+}
+@media (max-width: 1000px) {
+  [data-state="CLOSED"] {
+    display: none;
+  }
+  .drawer {
+    position: fixed;
+    z-index: 1111111111111111111111;
+    top: 8px;
+    bottom: 8px;
+    inset: 0;
+  }
+  .backdrop {
+    position: absolute;
+    z-index: 11111;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+  }
+}
+
+

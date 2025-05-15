@@ -11,7 +11,9 @@
   "dependencies": {
     "@solidjs/router": "^0.15.3",
     "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
     "markdown-it-github-alerts": "^1.0.0",
+    "markdown-it-replace-link": "^1.2.2",
     "rehype-github-alert": "^1.0.0",
     "remark-gfm": "^4.0.1",
     "solid-js": "^1.9.5",

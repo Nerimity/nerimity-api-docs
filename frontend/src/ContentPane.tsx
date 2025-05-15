@@ -3,14 +3,28 @@ import { useLocation } from "@solidjs/router";
 import { createEffect, createResource, createSignal, Show } from "solid-js";
 import markdownit from "markdown-it";
 import MarkdownItGitHubAlerts from "markdown-it-github-alerts";
+import MarkdownItReplaceLink from "markdown-it-replace-link";
+import MarkdownItAnchor from "markdown-it-anchor";
 import "markdown-it-github-alerts/styles/github-colors-dark-media.css";
 import "markdown-it-github-alerts/styles/github-base.css";
 
 const md = markdownit();
 md.use(MarkdownItGitHubAlerts);
+md.use(MarkdownItReplaceLink, {
+  replaceLink: (href, title, text) => {
+    if (href.endsWith(".md")) {
+      return href.slice(0, -3);
+    }
+    return href;
+  },
+});
+md.use(MarkdownItAnchor);
 
 function fetchDocs(path: string) {
-  return fetch("/docs/" + path).then((r) => r.text());
+  return fetch("/docs" + path).then((r) => {
+    if (r.status !== 200) return "# This page does not exist.";
+    return r.text();
+  });
 }
 
 export const ContentPane = () => {
