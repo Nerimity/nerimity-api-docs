@@ -29,6 +29,10 @@
 
 - ### Websocket
 
+  - ROOT
+
+    - [Connecting to Websocket](/websocket/Connection.md)
+
   - Sending
 
     - [Authenticate](/websocket/sending/Authenticate.md)

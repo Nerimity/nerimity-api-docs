@@ -67,6 +67,14 @@ export const Drawer = () => {
           <SolidMarkdown
             children={docs()!}
             components={{
+              p: (p) => {
+                const child = children(p.children as any);
+                const text = child.toArray()[0] as string;
+                if (text === "ROOT") {
+                  return null;
+                }
+                return <p>{text}</p>;
+              },
               h3: (h3) => {
                 const child = children(h3.children as any);
                 const name = child.toArray()[0] as string;
