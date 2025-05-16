@@ -15,12 +15,12 @@ You can use the [SocketIO Client](https://socket.io/docs/) to connect to the Web
 ```js
 import io from "socket.io-client";
 
-const socket = io(env.WS_URL || env.SERVER_URL, {
+const socket = io("https://nerimity.com", {
   transports: ["websocket"],
 });
 
 socket.on("connect", () => {
-  socket.emit(ClientEvents.AUTHENTICATE, { token: "YOUR_TOKEN" });
+  socket.emit("user:authenticate", { token: "YOUR_TOKEN" });
 });
 
 socket.on("user:authenticated", (payload) => {
