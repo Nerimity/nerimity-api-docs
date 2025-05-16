@@ -1,4 +1,11 @@
-import { children, createResource, createSignal, Show } from "solid-js";
+import {
+  children,
+  createEffect,
+  createResource,
+  createSignal,
+  on,
+  Show,
+} from "solid-js";
 import { SolidMarkdown } from "solid-markdown";
 import style from "./Drawer.module.css";
 import { A, useLocation } from "@solidjs/router";
@@ -20,6 +27,33 @@ export const Drawer = () => {
 
   const location = useLocation();
 
+  const onCategoryClick = (clickedCategory: string) => {
+    const test = document.querySelector(
+      `.${style.drawer} .category.${clickedCategory}`
+    );
+    test?.classList.toggle("show");
+  };
+
+  createEffect(
+    on(docs, () => {
+      const lis = document.querySelectorAll(`.${style.drawer} li`);
+      let mainCategory = "";
+
+      lis.forEach((li) => {
+        if (li.firstChild?.nodeName === "H3") {
+          mainCategory = li.firstChild.textContent!;
+          li.classList.add("category", mainCategory);
+
+          if (li.querySelector("[data-selected='true']")) {
+            onCategoryClick(mainCategory);
+          }
+
+          return;
+        }
+      });
+    })
+  );
+
   return (
     <>
       <Show when={drawerState() === "OPENED"}>
@@ -33,6 +67,11 @@ export const Drawer = () => {
           <SolidMarkdown
             children={docs()!}
             components={{
+              h3: (h3) => {
+                const child = children(h3.children as any);
+                const name = child.toArray()[0] as string;
+                return <h3 onClick={() => onCategoryClick(name)}>{name}</h3>;
+              },
               a: (a) => {
                 const child = children(a.children as any);
                 const text = child.toArray()[0] as string;
